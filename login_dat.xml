@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<login>
+	<default>
+		<login src="adm">
+			<system>UC4</system>
+			<client>0</client>
+			<name>uc</name>
+			<department>uc</department>
+			<passw/>
+			<language>E</language>
+			<clienttype>D</clienttype>
+			<clientvers></clientvers>
+			<os/>
+			<hostname></hostname>
+			<color>color:241,178,14</color>
+            <fontsize>11</fontsize>
+		</login>
+	</default>	
+</login>

@@ -1,0 +1,66 @@
+[Bootstrap]
+SetupTitle=Install
+SetupText=Copying Files, please stand by.
+Spawn=UCSetup.exe
+CabFile=BOOTSTRP3.CAB
+Uninstal=st6unst.exe
+TmpDir=msftqws.pdw
+Cabs=1
+
+
+[Bootstrap Files]
+File1=@VB6STKIT.DLL,$(WinSysPathSysFile),,,3/26/99 12:00:00 AM,101888,6.0.84.50
+File2=@MSVCRT40.DLL,$(WinSysPathSysFile),,,2/8/99 12:00:00 AM,326656,4.22.0.0
+File3=@COMCAT.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,5/31/98 1:00:00 AM,22288,4.71.1460.1
+File4=@STDOLE2.TLB,$(WinSysPathSysFile),$(TLBRegister),,3/8/99 12:02:26 PM,17920,2.40.4275.1
+File5=@ASYCFILT.DLL,$(WinSysPathSysFile),,,3/8/99 12:02:26 PM,147728,2.40.4275.1
+File6=@OLEPRO32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,3/8/99 12:02:26 PM,164112,5.0.4275.1
+File7=@OLEAUT32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,3/8/99 12:02:26 PM,598288,2.40.4275.1
+File8=@MSVBVM60.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,6/2/99 1:00:00 AM,1384448,6.0.84.95
+File9=@MFC42.DLL,$(WinSysPath),$(DLLSelfRegister),$(Shared),4/27/99,995383,6.00.8447.0
+
+[Setup]
+Title=UserInterface
+DefaultDir=UserInterface\bin
+UC4_HOME=C:\Automic
+AppExe=UCDJ.exe
+AppToUninstall=UCDJ.exe
+
+[Setup1 Files]
+File1=@UCDJ.EXE,$(AppPath),,,1/1/1999,100000,3.02.0.0,U
+File2=@UCDJ.ini,$(AppPath),,,1/1/1999,9000,3.02.0.0,I
+File3=@ConfigRef.class,$(AppPath),,,1/1/1999,9000,3.02.0.0,U
+File4=@login_dat.xml,$(AppPath),,,1/1/1999,9000,3.02.0.0,I
+File5=@uc4config.xml,$(AppPath),,$(Shared),1/1/1999,9000,3.02.0.0,I
+File6=@uc4docref.properties,$(AppPath),,,1/1/1999,40000,3.02.0.0,U
+File7=@uc4msgref.properties,$(AppPath),,,1/1/1999,40000,3.02.0.0,U
+File8=@ucdj.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File9=@jnlp.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File10=@UCDJ.bat,$(AppPath),,,1/1/1999,9000,3.02.0.0,U
+File11=@uc4.wav,$(AppPath),,,1/1/1999,5000000,3.02.0.0,U
+File12=@CallHtmlHelp.dll,$(AppPath),,,1/1/1999,500000,3.02.0.0,U
+File13=@CallHtmlHelpX64.dll,$(AppPath),,,1/1/1999,500000,3.02.0.0,U
+File14=@UC.MSL,$(AppPath),,$(Shared),1/1/1999,600000,3.02.0.0,U
+File15=@uc4-ra.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File16=@AttachLayout.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File17=@groovy-all.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File18=@intellisense.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File19=@swingx.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File20=@synthetica.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File21=@syntheticaAddons.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File22=@lookandfeel.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File23=@jh.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File24=@xercesImpl.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File25=@UCXJPS84.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File26=@uc4.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+File27=@Riverlayout.jar,$(AppPath),,,1/1/1999,4500000,3.02.0.0,U
+
+[IconGroups]
+Group0=Automic
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Automic]
+Icon1="ucdj.exe"
+Title1=UserInterface
+StartIn1=$(AppPath)
